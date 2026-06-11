@@ -57,3 +57,23 @@ true-aa-box {
   display: flex;
   gap: 20px;
 }
+
+outer-article-box {
+  
+}
+
+inner-article-box {
+  text-align: center;
+  background-color: #f4f4f9;      
+  border: 2px solid #333333;       
+  padding: 20px;                   
+  margin: 20px 0;                  
+  width: 300px;                   
+  border-radius: 8px;              
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  flex: 4;
+}
+
+article-title {
+  font-size: 1.17em;
+}
