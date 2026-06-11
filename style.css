@@ -8,6 +8,7 @@ article-aside-box {
   border-radius: 8px;              
   box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
   flex: 3;
+  font: 
 }
 
 article-aside-title {
@@ -28,6 +29,7 @@ aside-article-box {
 
 aside-article-title {
   text-align: center;
+  font-size: 1.17em;
 }
 
 aside-article-text {
