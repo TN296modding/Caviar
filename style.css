@@ -1,39 +1,57 @@
 article-aside-box {
-  
+  text-align: center;
+  background-color: #f4f4f9;      
+  border: 2px solid #333333;       
+  padding: 20px;                   
+  margin: 15px 0;                  
+  width: 300px;                   
+  border-radius: 8px;              
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  flex: 3;
 }
 
 article-aside-title {
-  
+  text-align: center;
 }
 
 article-aside-text {
-  
+  text-align: center;
 }
 
 aside-article-box {
-  
+  text-align: center;
+  flex: 1; /* Takes up 25% of the width */
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-left: 4px solid #333;
 }
 
 aside-article-title {
-  
+  text-align: center;
 }
 
 aside-article-text {
-  
+  text-align: center;
 }
 
 starter {
-  
+  text-align: center;
 }
 
 body {
-  
+  text-align: center;
+  background-color: #FDFFF2;
 }
 
 h1 {
-  
+  text-align: center;
 }
 
 h2 {
-  
+  text-align: center;
+}
+
+true-aa-box {
+  display: flex;
+  gap: 20px;
 }
