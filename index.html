@@ -98,12 +98,41 @@
         </inner-article-box>
       </outer-article-box>
 
-  <!-- Going to try to make this a button which switches the text each time. -->
-      <citation-footer>
-        CITATION <br>
-        :: back/next ;;
-      </citation-footer>
+      <div class="carousel">
+        <div class="text-box">
+          <p id="display-text"></p>
+        </div>
+        <div class="controls">
+          <button id="btn-prev" onclick="navigate(-1)">«</button>
+          <span id="counter"></span>
+          <button id="btn-next" onclick="navigate(1)">»</button>
+        </div>
+      </div>
 
+    <script>
+      const texts = [
+        "Citation 1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ];
+      let current = 0;
+
+      function render() {
+        document.getElementById("display-text").textContent = texts[current];
+        document.getElementById("counter").textContent = `${current + 1} / ${texts.length}`;
+        document.getElementById("btn-prev").disabled = current === 0;
+        document.getElementById("btn-next").disabled = current === texts.length - 1;
+      }
+
+      function navigate(dir) {
+        current = Math.max(0, Math.min(texts.length - 1, current + dir));
+        render();
+      }
+
+      render(); // show first item on load
+    </script>
       
     </starter>
   </body>
