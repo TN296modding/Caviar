@@ -59,7 +59,7 @@ true-aa-box {
 }
 
 outer-article-box {
-  
+  display: block;
 }
 
 inner-article-box {
@@ -72,6 +72,7 @@ inner-article-box {
   border-radius: 8px;              
   box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
   flex: 3;
+  display: block;
 }
 
 article-title {
